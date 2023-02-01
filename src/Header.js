@@ -64,6 +64,7 @@ const Header = ({ blogs, setBlog }) => {
           return blog.id !== iD;
         });
         setBlog(newBlog);
+        blogs = newBlog;
         localStorage.setItem("myblogs", JSON.stringify(newBlog));
       }
     }
